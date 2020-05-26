@@ -27,11 +27,7 @@ porkchops_per_emerald = 7
 
 # Knowing the conversion rate, let's see how many more chicken
 def chickens_to_emeralds(number_of_chickens):
-    # print("We have: " + str(number_of_chickens) + " chickens")
-    # print("It costs: " + str(chickens_per_emerald) + " for one emerald")
-
     emeralds_earned = math.floor(number_of_chickens/chickens_per_emerald)
-    # print("That means we can get: " + str(emeralds_earned) + " emeralds!")
     return emeralds_earned
 
 
@@ -41,9 +37,8 @@ print("Emeralds from chickens: " + str(profit))
 
 # ASSIGNMENT: How many emeralds can you earn in total?
 def total_emeralds(number_of_chickens, number_of_rabbits, number_of_porkchops):
-    # TODO: fix the formula to output the total number of emeralds earned if you sold all your raw meat
-    # TODO: for now, don't worry about negative numbers or the fact that we get a decimal number of emeralds
-    emeralds_earned = 1
+    emeralds_earned = math.floor(number_of_chickens/chickens_per_emerald) + math.floor(number_of_rabbits/rabbits_per_emerald)\
+                      + math.floor(number_of_porkchops/porkchops_per_emerald)
     return emeralds_earned
 
 
