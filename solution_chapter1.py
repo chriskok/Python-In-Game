@@ -37,8 +37,10 @@ print("Emeralds from chickens: " + str(profit))
 
 # ASSIGNMENT: How many emeralds can you earn in total?
 def total_emeralds(number_of_chickens, number_of_rabbits, number_of_porkchops):
-    emeralds_earned = math.floor(number_of_chickens/chickens_per_emerald) + math.floor(number_of_rabbits/rabbits_per_emerald)\
-                      + math.floor(number_of_porkchops/porkchops_per_emerald)
+    chicken_emeralds = math.floor(number_of_chickens/chickens_per_emerald)
+    rabbit_emeralds = math.floor(number_of_rabbits/rabbits_per_emerald)
+    porkchop_emeralds = math.floor(number_of_porkchops/porkchops_per_emerald)
+    emeralds_earned =  chicken_emeralds + rabbit_emeralds + porkchop_emeralds
     return emeralds_earned
 
 
