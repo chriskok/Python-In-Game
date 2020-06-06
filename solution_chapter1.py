@@ -1,15 +1,14 @@
-# change this code
-mystring = None
-myfloat = None
-myint = None
-my_emeralds = 10
-your_emeralds = 20
-total_emeralds = my_emeralds + your_emeralds
+# TODO: Change this code
+# Declare your name as "Bob", set your health to 2.5 and 
+# set your diamond count to 20
+my_name = "Bob"
+my_health = float(2)  # or just 2.0
+my_diamonds = 20
 
 # testing code
-if mystring == "hello":
-    print("String: %s" % mystring)
-if isinstance(myfloat, float) and myfloat == 10.0:
-    print("Float: %f" % myfloat)
-if isinstance(myint, int) and myint == 20:
-    print("Integer: %d" % myint)
+if my_name == "Bob":
+    print("Name (string): {}".format(my_name))
+if isinstance(my_health, float) and my_health == 2.0:
+    print("Health (float): {}".format(my_health))
+if isinstance(my_diamonds, int) and my_diamonds == 20:
+    print("Diamonds (int): {}".format(my_diamonds))
